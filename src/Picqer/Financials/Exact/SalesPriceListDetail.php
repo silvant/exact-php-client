@@ -12,6 +12,7 @@ namespace Picqer\Financials\Exact;
  * @property Guid $Account Customer account Id
  * @property String $AccountName Customer account name
  * @property Guid $BasePrice Standard price
+ * @property Double $BasePriceAmount Amount of the base price. If base price = use the standard sales price, it shows the latest item sales price. If base price = set sales price, it shows the base price which defined in price list.
  * @property DateTime $Created Creation date
  * @property Guid $Creator User ID of creator
  * @property String $CreatorFullName Name of creator
@@ -43,6 +44,7 @@ class SalesPriceListDetail extends Model
         'Account',
         'AccountName',
         'BasePrice',
+        'BasePriceAmount',
         'Created',
         'Creator',
         'CreatorFullName',
